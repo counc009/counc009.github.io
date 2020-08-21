@@ -1,1 +1,138 @@
-Hello World!
+<style>
+	html, body {
+		margin: 0!important;
+		padding: 0!important;
+	}
+	
+	video {
+		height: 80%;
+		width: 100%;
+	}
+	
+	::cue {
+		color: #ff0000;
+	}
+</style>
+
+<title>Dance Recorder</title>
+<h1>Dance Recorder</h1>
+
+<br>
+<button id="btn-select-song">Select Song</button>
+<button id="btn-preview-video">Preview Video</button>
+<button id="btn-start-recording">Start Recording</button>
+<button id="btn-stop-recording" disabled>Stop Recording</button>
+
+<hr>
+<p id="p-audio">Audio File: Not Specified</p>
+<video autoplay playsinline muted></video>
+
+<script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+<script>
+const video = document.querySelector('video');
+
+async function stopRecordingCallback() {
+	video.srcObject = null;
+	let blob = await recorder.getBlob();
+	
+	video.src = null;
+	recorder.stream.getTracks(t => t.stop());
+	
+	// reset recorder's state
+	await recorder.reset();
+	
+	// clear the memory
+	await recorder.destroy();
+	
+	// so that we can record again
+	recorder = null;
+	
+	invokeSaveAsDialog(blob, 'video.webm');
+}
+
+let recorder; // globally accessible
+let audio;
+
+document.getElementById('btn-start-recording').onclick = async function() {
+
+	// If previewing video already
+	if (recorder) {
+		video.srcObject = null;
+		video.src = null;
+		recorder.stream.getTracks(t => t.stop());
+		
+		await recorder.reset();
+		await recorder.destroy();
+		recorder = null;
+	}
+
+	this.disabled = true;
+	let stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});
+	video.srcObject = stream;
+	recorder = new RecordRTCPromisesHandler(stream, {type: 'video'});
+	await recorder.startRecording();
+	
+	// helps releasing camera on stopRecordingCallback
+	recorder.stream = stream;
+	
+	document.getElementById('btn-stop-recording').disabled = false;
+	document.getElementById('btn-select-song').disabled = true;
+	document.getElementById('btn-preview-video').disabled = true;
+
+	var text = video.addTextTrack("subtitles");
+	text.mode = 'showing';
+	text.addCue(new VTTCue(0.0, 1.0, "5"));
+	text.addCue(new VTTCue(1.0, 2.0, "4"));
+	text.addCue(new VTTCue(2.0, 3.0, "3"));
+	text.addCue(new VTTCue(3.0, 4.0, "2"));
+	text.addCue(new VTTCue(4.0, 5.0, "1"));
+	
+	setTimeout(function() { 	
+		if (audio) {
+			audio.currentTime = 0;
+			audio.play();
+		}
+	}, 5000);
+};
+
+document.getElementById('btn-preview-video').onclick = async function() {
+	this.disabled = true;
+	let stream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});
+	video.srcObject = stream;
+	recorder = new RecordRTCPromisesHandler(stream, {type: 'video'});
+	await recorder.startRecording();
+	
+	// helps releasing camera on stopRecordingCallback
+	recorder.stream = stream;
+}
+
+document.getElementById('btn-stop-recording').onclick = async function() {
+	this.disabled = true;	
+	await recorder.stopRecording();
+	
+	if (audio) {
+		audio.pause();
+	}
+	
+	stopRecordingCallback();
+	
+	document.getElementById('btn-start-recording').disabled = false;
+	document.getElementById('btn-select-song').disabled = false;
+	document.getElementById('btn-preview-video').disabled = false;
+};
+
+document.getElementById('btn-select-song').onclick = async function() {
+	var input = document.createElement('input');
+	input.type = 'file';
+	
+	input.onchange = e => {
+		var file = e.target.files[0];
+		audio = new Audio(URL.createObjectURL(file));
+		document.getElementById('btn-select-song').innerText = "Change Song";
+		
+		document.getElementById('p-audio').innerText = "Audio File: " + file.name;
+	};
+	
+	input.click();
+}
+</script>
