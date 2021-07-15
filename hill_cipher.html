@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Hill Cipher Cracking</title>
+    <meta charset="utf-8" />
+    <style>
+      #cipherText {
+        border: 1px solid black;
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 100%;
+      }
+      #cipherText tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      #cipherText td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width:5%;
+        text-align: center;
+      }
+      #cipherText input {
+        width: 90%;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Hill Cipher Cracking</h1>
+      <h2>Known Key:</h2>
+      <table>
+      <tr>
+        <td><input type="number" id="k0" placeholder="a" min=0 max=25></td>
+        <td><input type="number" id="k1" placeholder="b" min=0 max=25 value=24></td>
+        <td><input type="number" id="k2" placeholder="c" min=0 max=25></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="k3" placeholder="d" min=0 max=25></td>
+        <td><input type="number" id="k4" placeholder="e" min=0 max=25></td>
+        <td><input type="number" id="k5" placeholder="f" min=0 max=25></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="k6" placeholder="g" min=0 max=25></td>
+        <td><input type="number" id="k7" placeholder="h" min=0 max=25 value=17></td>
+        <td><input type="number" id="k8" placeholder="i" min=0 max=25></td>
+      </tr>
+    </table>
+    
+    <h2>Ciphertext and Guessed Plaintext</h2>
+    <table id="cipherText">
+    </table>
+    <script src="hill_cipher.js"></script>
+    <br>
+    <button onclick="breakCipher()">Attempt to Break</button>
+    <button onclick="decrypt()">Attempt to Decrypt</button>
+    </div>
+    
+    <h2 class="error" id="lenError"></h2>
+    <h2 class="error" id="valError"></h2>
+    <h2 class="error" id="keyError"></h2>
+    <h2 class="error" id="slvError"></h2>
+    <table id="solveRes"></table>
+    <table id="solveExp"></table>
+    <p id="decryptRes"></p>
+  </body>
+</html>
