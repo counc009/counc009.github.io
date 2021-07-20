@@ -56,7 +56,8 @@ content:
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - title: University of Illinois-Urbana Champaign
+      - layout: top-middle
+        title: University of Illinois-Urbana Champaign
         caption: Present
         sub_title: PhD Computer Science
         # quote: >
@@ -66,7 +67,7 @@ content:
 
         #  I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
 
-      - layout: center
+      - layout: top-middle
         title: University of Minnesota-Twin Cities
         caption: 2021
         sub_title: |
@@ -78,17 +79,17 @@ content:
      - title: Undergraduate Teaching Assistant
        layout: list
        content:
-        - layout: left
+        - layout: top-middle
           title: Introduction to Machine Architecture and Organization
           caption: 2019
-        - layout: left
+        - layout: top-middle
           title: Introduction to Algorithms and Data Structures
           caption: 2018
 
   - title: Research
     layout: list
     content:
-     - layout: left
+     - layout: top-middle
        title: Extensible Implementation-Agnostic Parallel Programming
        caption: 2021
        description: |
