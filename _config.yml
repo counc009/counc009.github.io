@@ -70,21 +70,18 @@ content:
       - layout: top-middle
         title: University of Minnesota-Twin Cities
         caption: 2021
-        sub_title: |
-          BS Computer Science, *summa cum laude*
+        sub_title: BS Computer Science, summa cum laude
 
   - title: Teaching
     layout: list
     content:
-     - title: Undergraduate Teaching Assistant
-       layout: list
-       content:
-        - layout: top-middle
-          title: Introduction to Machine Architecture and Organization
-          caption: 2019
-        - layout: top-middle
-          title: Introduction to Algorithms and Data Structures
-          caption: 2018
+     - layout: top-middle
+       title: Introduction to Machine Architecture and Organization
+       caption: Undergraduate Teaching Assistant, 2019
+
+     - layout: top-middle
+       title: Introduction to Algorithms and Data Structures
+       caption: Undergraduate Teaching Assistant, 2018
 
   - title: Research
     layout: list
@@ -92,14 +89,16 @@ content:
      - layout: top-middle
        title: Extensible Implementation-Agnostic Parallel Programming
        caption: 2021
+       link: github.com/melt-umn/ableC-parallel
        description: |
-        [Honors Thesis](https://hdl.handle.net/11299/220246), Paper submitted for review to GPCE 2021.
-        [GitHub](https://github.com/melt-umn/ableC-parallel)
+        My Honor's Thesis on this project is available [here](https://hdl.handle.net/11299/220246).
+
+        A paper based on this work has been submitted for review to GPCE 2021.
 
   - title: Work Experience
     layout: list
     content:
-     - layout: left
+     - layout: top-middle
        title: Software Development Engineer Intern
        sub_title: Amazon Music
        caption: 2020
@@ -150,7 +149,7 @@ content:
       ![Ferns](/modern-resume-theme/images/landscape-ferns.jpg "Ferns")
 
 # Footer
-footer_show_references: true
+footer_show_references: false
 # references_title: References on request (Override references text)
 
 # Build settings
