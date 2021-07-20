@@ -56,8 +56,7 @@ content:
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: center
-        title: University of Illinois-Urbana Champaign
+      - title: University of Illinois-Urbana Champaign
         caption: Present
         sub_title: PhD Computer Science
         # quote: >
@@ -70,7 +69,7 @@ content:
       - layout: center
         title: University of Minnesota-Twin Cities
         caption: 2021
-        sub_title: BS Computer Science, *summa cum laude*
+        sub_title: |BS Computer Science, *summa cum laude*
 
   - title: Teaching
     layout: list
