@@ -91,9 +91,11 @@ content:
        caption: 2021
        link: github.com/melt-umn/ableC-parallel
        description: |
-        My Honor's Thesis on this project is available [here](https://hdl.handle.net/11299/220246).
+        Aaron Councilman. 2021. *An Extensible Implementation-Agnostic Parallel
+        Programming Framework for C in ableC*. Bachelor's Thesis. University
+        of Minnesota, Minneapolis, MN. https://hdl.handle.net/11299/220246.
 
-        A paper based on this work has been submitted for review to GPCE 2021.
+        A paper based on this work has been submitted for review to GPCE '21.
 
   - title: Work Experience
     layout: list
