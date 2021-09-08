@@ -89,7 +89,6 @@ content:
      - layout: top-middle
        title: Extensible Parallel Programming
        caption: 2019
-       link: hdl.handle.net/11299/203190
        description: |
         Aaron Councilman. 2019. *Extensible Parallel Programming in ableC*.
         Technical Report. University of Minnesota, Minneapolis, MN.
