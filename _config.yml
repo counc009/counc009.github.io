@@ -27,7 +27,7 @@ linkedin_username: aaron-councilman-910847149
 # pinterest_username: jekyll
 # youtube_username: globalmtb
 # googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
+orcid_username: 0000-0002-3871-8523
 
 # Additional icon links
 # additional_links:
@@ -58,7 +58,7 @@ content:
     content:
       - layout: top-middle
         title: University of Illinois-Urbana Champaign
-        caption: Present
+        caption: 2021-Present
         sub_title: PhD Computer Science
         # quote: >
         #  Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
@@ -69,7 +69,7 @@ content:
 
       - layout: top-middle
         title: University of Minnesota-Twin Cities
-        caption: 2021
+        caption: 2017-2021
         sub_title: BS Computer Science, summa cum laude
 
   - title: Research
