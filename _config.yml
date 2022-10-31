@@ -91,7 +91,7 @@ content:
         Rutenbar.  2022. *HPVM2FPGA: Enabling True Hardware-Agnostic FPGA
         Programming*.  *Proceedings of the IEEE International Conference on
         Application-Specific Systems, Architectures, and Processors (ASAP)*.
-        <https://doi.org/10.1109/ASAP54787.2022.00012>
+        <https://doi.org/10.1109/ASAP54787.2022.00012>.
 
      - layout: top-middle
        title: Extensible Implementation-Agnostic Parallel Programming
