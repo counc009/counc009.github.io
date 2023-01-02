@@ -48,7 +48,7 @@ orcid_username: 0000-0002-3871-8523
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, I'm Aaron and I'm a PhD student, research assistant, and teaching assistant at the University of Illinois Urbana-Champaign. I'm working in Professor Vikram Adve's group, on compilers and programming languages for heterogenous parallel programming. I have other research experience in parallel programming and extensible languages.
+  Hi, I'm Aaron and I'm a PhD student and research assistant at the University of Illinois Urbana-Champaign. I'm working in Professor Vikram Adve's group, on compilers and programming languages for heterogenous parallel programming. I have other research experience in parallel programming and extensible languages.
 
   My primary interests are: <mark>programming languages</mark>, <mark>parallel programming</mark>, <mark>operating systems</mark>, and <mark>machine architecture</mark>.
 
@@ -125,6 +125,14 @@ content:
   - title: Teaching
     layout: list
     content:
+     - layout: top-middle
+       title: Compiler Construction
+       caption: Graduate Teaching Assistant, 2022
+       description: |
+        Updated and modified old assignments and created new assignments for
+        the course. Delivered five classes of lectures, coving topics related
+        to Global Dataflow Analysis.
+
      - layout: top-middle
        title: Introduction to Machine Architecture and Organization
        caption: Undergraduate Teaching Assistant, 2019
