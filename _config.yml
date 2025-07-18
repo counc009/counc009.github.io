@@ -86,15 +86,18 @@ content:
 
      - layout: top-middle
        title: Hardware-Agnostic Programming of Heterogeneous Systems
-       caption: |
-         [Hercules](gitlab.engr.illinois.edu/llvm/hercules) (2025),
-         [HPVM](gitlab.engr.illinois.edu/llvm/hpvm-release) (2022)
        description: |
+         <h2>Hercules</h3>
+         2025
+         <gitlab.engr.illinois.edu/llvm/hercules>
          Russel Arbore, **Aaron Councilman**, Xavier Routh, Ryan Ziegler,
          Praneet Rathi, Vikram Adve. 2025. *Hercules: A Compiler for
          Productive Programming of Heterogeneous Systems*.
          [arXiv:2503.10855](https://arxiv.org/abs/2503.10855).
 
+         <h2>HPVM</h2>
+         2022
+         <gitlab.engr.illinois.edu/llvm/hpvm-release>
          Adel Ejjeh, **Aaron Councilman**, Akash Kothari, Maria Kotsifakou,
          Leon Medvinsky, Abdul Rafae Noor, Hashim Sharif, Yifan Zhao, Sarita
          Adve, Sasa Misailovic, Vikram Adve. 2022. *HPVM: Hardware-Agnostic
