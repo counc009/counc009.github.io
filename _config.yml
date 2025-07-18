@@ -90,7 +90,7 @@ content:
          <h2 style="text-align: center;">Hercules</h2>
          <p style="text-align: center;">
          2025 <br>
-         <a style="link" href="https://gitlab.engr.illinois.edu/llvm/hercules">gitlab.engr.illinois.edu/llvm/hercules</a>
+         <a class="link" href="https://gitlab.engr.illinois.edu/llvm/hercules">gitlab.engr.illinois.edu/llvm/hercules</a>
          </p>
 
          Russel Arbore, **Aaron Councilman**, Xavier Routh, Ryan Ziegler,
@@ -101,7 +101,7 @@ content:
          <h2 style="text-align: center;">HPVM</h2>
          <p style="text-align: center;">
          2022 <br>
-         <a style="link" href="https://gitlab.engr.illinois.edu/llvm/hpvm-release">gitlab.engr.illinois.edu/llvm/hpvm-release</a>
+         <a class="link" href="https://gitlab.engr.illinois.edu/llvm/hpvm-release">gitlab.engr.illinois.edu/llvm/hpvm-release</a>
          </p>
 
          Adel Ejjeh, **Aaron Councilman**, Akash Kothari, Maria Kotsifakou,
