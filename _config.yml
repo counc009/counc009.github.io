@@ -48,9 +48,9 @@ orcid_username: 0000-0002-3871-8523
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, I'm Aaron and I'm a PhD student and research assistant at the University of Illinois Urbana-Champaign. I'm working in Professor Vikram Adve's group, on compilers and programming languages for heterogenous parallel programming. I have other research experience in parallel programming and extensible languages.
+  Hi, I'm Aaron and I'm a PhD student and research assistant at the University of Illinois Urbana-Champaign. I'm working in Professor Vikram Adve's group, on program synthesis for domain-specific languages. I'm also interested in compilers and programming languages for heterogenous parallel programming and have research experience in parallel programming and extensible languages.
 
-  My primary interests are: <mark>programming languages</mark>, <mark>parallel programming</mark>, <mark>operating systems</mark>, and <mark>machine architecture</mark>.
+  My primary interests are: <mark>automata theory</mark>, <mark>program synthesis</mark>, and <mark>programming languages</mark>.
 
 content:
   - title: Education # Title for the section
@@ -76,22 +76,43 @@ content:
     layout: list
     content:
      - layout: top-middle
-       title: Hardware-Agnostic Programming of Heterogeneous Systems
-       caption: 2022
-       link: gitlab.engr.illinois.edu/llvm/hpvm-release
+       title: Verified LLM-Generated Code
+       caption: 2025
        description: |
-        Adel Ejjeh, **Aaron Councilman**, Akash Kothari, Maria Kotsifakou, Leon
-        Medvinsky, Abdul Rafae Noor, Hashim Sharif, Yifan Zhao, Sarita Adve,
-        Sasa Misailovic, Vikram Adve. 2022. *HPVM: Hardware-Agnostic
-        Programming for Heterogeneous Parallel Systems*. *IEEE Micro*, 42(5).
-        <https://doi.org/10.1109/MM.2022.3186547>.
+         **Aaron Councilman**, David Fu, Aryan Gupta, Chengxiao Wang, David
+         Grove, Yu-Xiong Wang, Vikram Adve. 2025. *Towards Formal Verification
+         of LLM-Generated Code from Natural Language Prompts*.
+         [arXiv:2507.13290](https://arxiv.org/abs/2507.13290).
 
-        Adel Ejjeh, Leon Medvinsky, **Aaron Councilman**, Hemanh Nehra, Suraj
-        Sharma, Vikram Adve, Luigi Nardi, Eriko Nurvitadhi, and Rob
-        Rutenbar.  2022. *HPVM2FPGA: Enabling True Hardware-Agnostic FPGA
-        Programming*.  *Proceedings of the IEEE International Conference on
-        Application-Specific Systems, Architectures, and Processors (ASAP)*.
-        <https://doi.org/10.1109/ASAP54787.2022.00012>.
+     - layout: list
+       title: Hardware-Agnostic Programming of Heterogeneous Systems
+       - layout: top-middle
+         title: Hercules
+         caption: 2025
+         link: gitlab.engr.illinois.edu/llvm/hercules
+         description: |
+           Russel Arbore, **Aaron Councilman**, Xavier Routh, Ryan Ziegler,
+           Praneet Rathi, Vikram Adve. 2025. *Hercules: A Compiler for
+           Productive Programming of Heterogeneous Systems*.
+           [arXiv:2503.10855](https://arxiv.org/abs/2503.10855).
+
+       - layout: top-middle
+         title: Heterogeneous Parallel Virtual Machine (HPVM)
+         caption: 2022
+         link: gitlab.engr.illinois.edu/llvm/hpvm-release
+         description: |
+          Adel Ejjeh, **Aaron Councilman**, Akash Kothari, Maria Kotsifakou,
+          Leon Medvinsky, Abdul Rafae Noor, Hashim Sharif, Yifan Zhao, Sarita
+          Adve, Sasa Misailovic, Vikram Adve. 2022. *HPVM: Hardware-Agnostic
+          Programming for Heterogeneous Parallel Systems*. *IEEE Micro*,
+          42(5).  <https://doi.org/10.1109/MM.2022.3186547>.
+
+          Adel Ejjeh, Leon Medvinsky, **Aaron Councilman**, Hemanh Nehra, Suraj
+          Sharma, Vikram Adve, Luigi Nardi, Eriko Nurvitadhi, and Rob
+          Rutenbar.  2022. *HPVM2FPGA: Enabling True Hardware-Agnostic FPGA
+          Programming*.  *Proceedings of the IEEE International Conference on
+          Application-Specific Systems, Architectures, and Processors (ASAP)*.
+          <https://doi.org/10.1109/ASAP54787.2022.00012>.
 
      - layout: top-middle
        title: Extensible Implementation-Agnostic Parallel Programming
