@@ -88,8 +88,10 @@ content:
        title: Hardware-Agnostic Programming of Heterogeneous Systems
        description: |
          <h2 style="text-align: center;">Hercules</h2>
+         <p style="text-align: center;">
          2025 <br>
-         [gitlab.engr.illinois.edu/llvm/hercules](https://gitlab.engr.illinois.edu/llvm/hercules)
+         <a style="link" href="https://gitlab.engr.illinois.edu/llvm/hercules">gitlab.engr.illinois.edu/llvm/hercules</a>
+         </p>
 
          Russel Arbore, **Aaron Councilman**, Xavier Routh, Ryan Ziegler,
          Praneet Rathi, Vikram Adve. 2025. *Hercules: A Compiler for
@@ -97,8 +99,10 @@ content:
          [arXiv:2503.10855](https://arxiv.org/abs/2503.10855).
 
          <h2 style="text-align: center;">HPVM</h2>
+         <p style="text-align: center;">
          2022 <br>
-         [gitlab.engr.illinois.edu/llvm/hpvm-release](https://gitlab.engr.illinois.edu/llvm/hpvm-release)
+         <a style="link" href="https://gitlab.engr.illinois.edu/llvm/hpvm-release">gitlab.engr.illinois.edu/llvm/hpvm-release</a>
+         </p>
 
          Adel Ejjeh, **Aaron Councilman**, Akash Kothari, Maria Kotsifakou,
          Leon Medvinsky, Abdul Rafae Noor, Hashim Sharif, Yifan Zhao, Sarita
