@@ -87,7 +87,7 @@ content:
      - layout: top-middle
        title: Hardware-Agnostic Programming of Heterogeneous Systems
        description: |
-         <h2>Hercules</h3>
+         <h2>Hercules</h2>
          2025
          <gitlab.engr.illinois.edu/llvm/hercules>
          Russel Arbore, **Aaron Councilman**, Xavier Routh, Ryan Ziegler,
