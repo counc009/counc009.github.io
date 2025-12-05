@@ -79,9 +79,9 @@ content:
        title: Verified LLM-Generated Code
        caption: 2025
        description: |
-         **Aaron Councilman**, David Fu, Aryan Gupta, Chengxiao Wang, David
-         Grove, Yu-Xiong Wang, Vikram Adve. 2025. *Towards Formal Verification
-         of LLM-Generated Code from Natural Language Prompts*.
+         **Aaron Councilman**, David Jiahao Fu, Aryan Gupta, Chengxiao Wang,
+         David Grove, Yu-Xiong Wang, Vikram Adve. 2025. *Towards Formal
+         Verification of LLM-Generated Code from Natural Language Prompts*.
          [arXiv:2507.13290](https://arxiv.org/abs/2507.13290).
 
      - layout: top-middle
