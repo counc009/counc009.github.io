@@ -539,33 +539,33 @@ function itemsXP() {
 
     for (const addon of item.addons.addons) {
       switch (addon.addon_kind) {
-        case 'ability':
+        case 'Ability':
           xp += abilityXP(addon.kind, addon.level);
           break;
-        case 'attribute':
+        case 'Attribute':
           let n = addon.bonus;
           totalBonus += n;
           xp += 2 * n * (n + 1) / 2; // Extra cost
           break;
-        case 'block':
+        case 'Block':
           let m = addon.bonus;
           totalBonus += m;
           xp += 2 * m * (m + 1) / 2; // Extra cost
           break;
-        case 'experience':
+        case 'Experience':
           totalBonus += addon.bonus;
           break;
-        case 'life':
+        case 'Life':
           xp += 2 * addon.bonus;
           break;
-        case 'recovery':
+        case 'Recovery':
           xp += 4 * addon.bonus;
           break;
-        case 'specialization':
+        case 'Specialization':
           totalBonus += addon.bonus;
           xp += specTagXP(addon.tag);
           break;
-        case 'style': xp += 3;
+        case 'Style': xp += 3;
           break;
       }
     }
